@@ -52,8 +52,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
 
     void Update()
-
-
+        
+      
 
     {
 
@@ -131,8 +131,10 @@ public class Movement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
     }
+
+    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Monolith"))
