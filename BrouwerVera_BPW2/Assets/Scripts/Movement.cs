@@ -32,12 +32,12 @@ public class Movement : MonoBehaviour
    
     public GameObject Water;
     public GameObject Water1;
-    //public GameObject Timeline;
     public GameObject PostProcessing2;
     public GameObject PostProcessing;
     public GameObject Huisje;
     public GameObject AnsuzRune;
     public GameObject Canvas;
+    
 
     void Start()
 
@@ -137,18 +137,17 @@ public class Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Monolith"))
         {
-            
+
             Water.gameObject.SetActive(true);
             Water1.gameObject.SetActive(false);
             PostProcessing2.gameObject.SetActive(true);
             PostProcessing.gameObject.SetActive(false);
             Huisje.gameObject.SetActive(false);
             AnsuzRune.gameObject.SetActive(true);
-            Canvas.gameObject.SetActive(false);
-            UnityEngine. Debug.Log("ODIN");
-           // Timeline.SetActive(true);
+            Canvas.gameObject.SetActive(false);   
         }
-      
+            
+     }
+        
     }
 
-}
